@@ -246,6 +246,12 @@
 
     <!-- Gazebo friction and material properties for back_caster -->
     <gazebo reference="back_caster">
+        <kp value="10000000.0" />
+        <kd value="100.0" />
+        <material>Gazebo/Gray</material>
+    </gazebo>
+
+	<gazebo reference="front_laser">
         <mu1 value="0.0"/>
         <mu2 value="0.0"/>
         <kp value="10000000.0" />
