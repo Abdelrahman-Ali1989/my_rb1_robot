@@ -118,9 +118,9 @@ class RotateServerNode:
 
         # Return results
         if action_result == True:
-            response.result = "Success"
+            response.result = "Success completing rotation to target angle"
         else:
-            response.result = "Failure"
+            response.result = "Failed to complete rotation to target angle"
 
         # Report service complete
         rospy.logdebug("Service Completed")
